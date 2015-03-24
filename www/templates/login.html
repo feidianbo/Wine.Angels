@@ -1,0 +1,27 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">登录</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeLogin()">关闭</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="doLogin()">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" ng-model="loginData.username" placeholder='请输入用户名'>
+                </label>
+                <label class="item item-input">
+                    <input type="password" ng-model="loginData.password" placeholder='请输入密码'>
+                </label>
+                <li class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox" ng-model="loginData.remember">
+                    </label>
+                    记住密码
+                </li>
+                <button class="button button-block button-positive" type="submit">登录</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
